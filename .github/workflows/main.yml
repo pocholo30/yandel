@@ -8,13 +8,9 @@ on:
 jobs:
   build_and_run:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout del repositorio
+      - name: Checkout Repo
         uses: actions/checkout@v4
-      
-      - name: Construir la imagen de Docker
-        run: docker build -t zn-test .
-      
-      - name: Ejecutar el contenedor
-        run: docker run zn-test
+      - name: Run List Updater
+        uses: pocholo30/yandel@main
