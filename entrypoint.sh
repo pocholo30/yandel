@@ -48,9 +48,9 @@ function run_with_retries() {
 
 echo "==================="
 
-git config --global user.name "${GITHUB_ACTOR}"
-git config --global user.email "${INPUT_EMAIL}"
-git config --global --add safe.directory /github/workspace
+git config --global user.name "${GITHUB_ACTOR}" 2>&1 | sed 's/^/\x1b[90m[ls]:\x1b[0m /'
+git config --global user.email "${INPUT_EMAIL}" 2>&1 | sed 's/^/\x1b[90m[ls]:\x1b[0m /'
+git config --global --add safe.directory /github/workspace 2>&1 | sed 's/^/\x1b[90m[ls]:\x1b[0m /'
 
 cd /app
 
@@ -85,9 +85,9 @@ cp ZeroNet-linux-dist-linux64/data/1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q\
 
 cd /github/workspace
 
-ls
+#ls
 
-git add maluma.m3u && git commit -m "Update Feed"
-git push --set-upstream origin main
+git add maluma.m3u && git commit -m "Update Feed" 2>&1 | sed 's/^/\x1b[90m[git]:\x1b[0m /'
+git push --set-upstream origin main 2>&1 | sed 's/^/\x1b[90m[git]:\x1b[0m /'
 
 echo "==================="
