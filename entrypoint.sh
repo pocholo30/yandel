@@ -51,7 +51,9 @@ echo "==================="
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${INPUT_EMAIL}"
 git config --global --add safe.directory /github/workspace
-	
+
+cd /app
+
 #python3 /usr/bin/feed.py
 
 # Ejecuta ZeroNet en segundo plano
@@ -75,11 +77,15 @@ fi
 #cat maluma.m3u
 
 cp ZeroNet-linux-dist-linux64/data/1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q\
-/data/listas/lista_fuera_iptv.m3u maluma.m3u
+/data/listas/lista_fuera_iptv.m3u /github/workspace/maluma.m3u
 
 #ls 2>&1 | sed 's/^/\x1b[90m[ls]:\x1b[0m /'
 #ls ZeroNet-linux-dist-linux64/data/1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q\
 #/data/listas/
+
+cd /github/workspace
+
+ls
 
 git add maluma.m3u && git commit -m "Update Feed"
 git push --set-upstream origin main
