@@ -1,7 +1,7 @@
 name: Docker Build y Run
 
 on:
-  schedule:
+  #schedule:
   #  - cron: '*/20 * * * *'
   workflow_dispatch:
 
