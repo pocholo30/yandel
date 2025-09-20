@@ -2,7 +2,10 @@
 
 # Define el comando que quieres ejecutar
 COMMAND="./ZeroNet-linux-dist-linux64/ZeroNet.sh --tor disable \
-	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_fuera_iptv.m3u"
+	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_fuera_iptv.m3u && \
+		./ZeroNet-linux-dist-linux64/ZeroNet.sh --tor disable \
+	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_iptv.m3u"
+
 # Define el límite de tiempo de espera en segundos
 TIMEOUT=60
 # Define el número máximo de reintentos
@@ -79,6 +82,9 @@ fi
 cp ZeroNet-linux-dist-linux64/data/1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q\
 /data/listas/lista_fuera_iptv.m3u /github/workspace/maluma.m3u
 
+cp ZeroNet-linux-dist-linux64/data/1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q\
+/data/listas/lista_iptv.m3u /github/workspace/ozuna.m3u
+
 #ls 2>&1 | sed 's/^/\x1b[90m[ls]:\x1b[0m /'
 #ls ZeroNet-linux-dist-linux64/data/1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q\
 #/data/listas/
@@ -87,7 +93,7 @@ cd /github/workspace
 
 #ls
 
-git add maluma.m3u && git commit -m "Update Feed" 2>&1 | sed 's/^/\x1b[90m[git]:\x1b[0m /'
+git add maluma.m3u ozuna.m3u && git commit -m "Update Feed" 2>&1 | sed 's/^/\x1b[90m[git]:\x1b[0m /'
 git push --set-upstream origin main 2>&1 | sed 's/^/\x1b[90m[git]:\x1b[0m /'
 
 echo "==================="
