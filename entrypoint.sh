@@ -69,8 +69,8 @@ fi
 
 # Segundo Archivo
 
-COMMAND='./ZeroNet-linux-dist-linux64/ZeroNet.sh --tor disable \
-	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_iptv.m3u'
+COMMAND="./ZeroNet-linux-dist-linux64/ZeroNet.sh --tor disable \
+	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_iptv.m3u"
 
 if run_with_retries; then
     echo -e "\e[90m[exec]: \e[0mFile obtained"
