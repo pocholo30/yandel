@@ -2,9 +2,7 @@
 
 # Define el comando que quieres ejecutar
 COMMAND="./ZeroNet-linux-dist-linux64/ZeroNet.sh --tor disable \
-	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_fuera_iptv.m3u && \
-		./ZeroNet-linux-dist-linux64/ZeroNet.sh --tor disable \
-	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_iptv.m3u"
+	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_fuera_iptv.m3u"
 
 # Define el límite de tiempo de espera en segundos
 TIMEOUT=60
@@ -61,6 +59,18 @@ cd /app
 
 # Ejecuta ZeroNet en segundo plano
 #./ZeroNet-linux-dist-linux64/ZeroNet.sh > /dev/null 2>&1 &
+
+if run_with_retries; then
+    echo -e "\e[90m[exec]: \e[0mFile obtained"
+else
+    echo -e "\e[90m[exec]: \e[0mFile not obtained"
+    exit 1
+fi
+
+# Segundo Archivo
+
+COMMAND='./ZeroNet-linux-dist-linux64/ZeroNet.sh --tor disable \
+	siteNeedFile 1JKe3VPvFe35bm1aiHdD4p1xcGCkZKhH3Q data/listas/lista_iptv.m3u'
 
 if run_with_retries; then
     echo -e "\e[90m[exec]: \e[0mFile obtained"
