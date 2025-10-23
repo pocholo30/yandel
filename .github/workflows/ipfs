@@ -1,0 +1,22 @@
+name: Update List
+
+on:
+  workflow_dispatch: # para dispararlo manualmente
+  schedule:
+    - cron: "0 3 * * *"  # se ejecuta diario a las 3am
+
+jobs:
+  update_file:
+    runs-on: ubuntu-latest
+    #permissions:
+    #  contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: wget -O archivo.txt https://ejemplo.com/archivo.txt
+      - run: wget -O archivo.txt https://ejemplo.com/archivo.txt
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add archivo.txt
+          git commit -m "Auto actualizacion archivo"
+          git push
