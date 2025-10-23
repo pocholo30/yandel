@@ -12,8 +12,8 @@ jobs:
     #  contents: write
     steps:
       - uses: actions/checkout@v4
-      - run: wget -O archivo.txt https://ejemplo.com/archivo.txt
-      - run: wget -O archivo.txt https://ejemplo.com/archivo.txt
+      - run: wget -O maluma.m3u https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_fuera_iptv.m3u
+      - run: wget -O ozuna.m3u https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
