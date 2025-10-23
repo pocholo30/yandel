@@ -15,8 +15,8 @@ jobs:
       - run: wget -O maluma.m3u https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_fuera_iptv.m3u
       - run: wget -O ozuna.m3u https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u
       - run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add archivo.txt
-          git commit -m "Auto actualizacion archivo"
+          git config user.name "updater[bot]"
+          git config user.email "updater[bot]@github.com"
+          git add maluma.m3u ozuna.m3u
+          git commit -m "Update List"
           git push
