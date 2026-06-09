@@ -5,7 +5,7 @@
     <!--
 
       IPFS Service Worker Gateway
-      Build: HEAD@9d7a781
+      Build: HEAD@572bc4a
 
       Your browser fetches and verifies this content, not this server.
 
@@ -41,7 +41,7 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0B3A53" />
-    <title>IPFS Service Worker Gateway | HEAD@9d7a781</title>
+    <title>IPFS Service Worker Gateway | HEAD@572bc4a</title>
     <meta name="description" content="Static HTML page that bootstraps a verifiable IPFS gateway in your browser. Every block is fetched from peers and verified against its CID." />
     <meta name="robots" content="noindex" />
     <link rel="icon" href="/ipfs-sw-favicon.ico" type="image/ico"/>
@@ -120,7 +120,7 @@
       }
     </style>
   </head>
-  <body><a href="https://k2k4r8lm8tkmuxbc8lkmq1in3v0oya1p6pe9o5bu0hu30br5ko08k2gb.ipns.inbrowser.link/cdn-cgi/content?id=N8umqDyRL21Ftpv3XrsdOf4tP4qS0EtLHNFFmx4QLKA-1780903620.741666-1.2.1.1-VsazNTSFl7r1rs.eThb.sMJpfgP3xdC.KGENajX.DlQ" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+  <body><a href="https://k2k4r8lm8tkmuxbc8lkmq1in3v0oya1p6pe9o5bu0hu30br5ko08k2gb.ipns.inbrowser.link/cdn-cgi/content?id=TnYilRovYO66IHOeLvWTyegdGHmrTh4w9ftg9Hg00uM-1780987532.083039-1.2.1.1-000ajF3RTL5TQDZ0Zj_Gx6soGCBfsSXm1a9ZZxg7ddw" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
     <div class="loading-container loading-indicator-js">
       <div class="loading-animation">
         <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0, 0, 500, 500">
@@ -136,6 +136,6 @@
       </div>
     </div>
     <div id="root" class="sans-serif charcoal f5"></div>
-    <script type="module" src="/ipfs-sw-index-4UE4PO5C.js"></script>
+    <script type="module" src="/ipfs-sw-index-RL2QIT7U.js"></script>
   </body>
 </html>
