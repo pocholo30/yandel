@@ -5,7 +5,7 @@
     <!--
 
       IPFS Service Worker Gateway
-      Build: HEAD@a2bd83e
+      Build: HEAD@19e64f8
 
       Your browser fetches and verifies this content, not this server.
 
@@ -41,13 +41,13 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0B3A53" />
-    <title>IPFS Service Worker Gateway | HEAD@a2bd83e</title>
+    <title>IPFS Service Worker Gateway | HEAD@19e64f8</title>
     <meta name="description" content="Static HTML page that bootstraps a verifiable IPFS gateway in your browser. Every block is fetched from peers and verified against its CID." />
     <meta name="robots" content="noindex" />
     <link rel="icon" href="/ipfs-sw-favicon.ico" type="image/ico"/>
     <link rel="shortcut icon" href="/ipfs-sw-favicon.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://delegated-ipfs.dev" />
-    <link rel="dns-prefetch" href="https://trustless-gateway.link" />
+    <link rel="dns-prefetch" href="https://trustless-gateway.net" />
     <style>
       .loading-container {
         position: fixed;
@@ -151,7 +151,7 @@
       }
     </style>
   </head>
-  <body><a href="https://k2k4r8lm8tkmuxbc8lkmq1in3v0oya1p6pe9o5bu0hu30br5ko08k2gb.ipns.inbrowser.link/cdn-cgi/content?id=xJ95qVYKrn0n0vDo710NdVSDuJnA_rSLBGIoCUu3Qlw-1787197276.691935-1.2.1.1-lM6iOsj9C3Vojofy6xGuwKN4XTyvakygnsL4GY5HdDRpOzTtvPzENN64esiA6CqT" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+  <body>
     <div class="loading-container loading-indicator-js">
       <div class="loading-animation">
         <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0, 0, 500, 500">
@@ -167,6 +167,6 @@
       </div>
     </div>
     <div id="root" class="sans-serif charcoal f5"></div>
-    <script type="module" src="/ipfs-sw-index-47SOVWSP.js"></script>
+    <script type="module" src="/ipfs-sw-index-RZEDYEDC.js"></script>
   </body>
 </html>
