@@ -5,7 +5,7 @@
     <!--
 
       IPFS Service Worker Gateway
-      Build: HEAD@19e64f8
+      Build: HEAD@23758dc
 
       Your browser fetches and verifies this content, not this server.
 
@@ -41,7 +41,7 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0B3A53" />
-    <title>IPFS Service Worker Gateway | HEAD@19e64f8</title>
+    <title>IPFS Service Worker Gateway | HEAD@23758dc</title>
     <meta name="description" content="Static HTML page that bootstraps a verifiable IPFS gateway in your browser. Every block is fetched from peers and verified against its CID." />
     <meta name="robots" content="noindex" />
     <link rel="icon" href="/ipfs-sw-favicon.ico" type="image/ico"/>
